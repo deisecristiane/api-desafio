@@ -3,7 +3,7 @@ import { Decimal } from "@prisma/client/runtime";
 import { type} from "os";
 
 export type ComicDTO = {
-    id?: string;
+    id?: number;
     name: string;
     description: string;
     price: Decimal;

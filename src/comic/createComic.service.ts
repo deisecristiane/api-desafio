@@ -5,14 +5,12 @@ import { PrismaService } from 'src/database/PrismaService';
 
 @Injectable()
 export class createComicService {
-    findAll() {
-        throw new Error("Method not implemented.");
-    }
+    
     //Conexão com banco de dados
     constructor(private prisma:PrismaService){}
 
     async create(data: ComicDTO){
-        const comicExists = await this.prisma.comic.findFirst({
+        const comicExists = await this.prisma.comic.findUnique({
             where:{
                 id:data.id,
             }

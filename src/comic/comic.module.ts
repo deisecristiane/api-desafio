@@ -3,9 +3,10 @@ import { createComicService } from './createComic.service';
 import { createComicController } from './createComic.controller';
 import { PrismaService } from 'src/database/PrismaService';
 import { findAllComicController } from './findAllComic.controller';
+import { findAllComicService } from './findAllComic.service';
 
 @Module({
   controllers: [createComicController, findAllComicController],
-  providers: [createComicService, findAllComicController, PrismaService]
+  providers: [createComicService, findAllComicService, PrismaService]
 })
 export class ComicModule {}
