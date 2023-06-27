@@ -1,7 +1,7 @@
-import { Controller, Get } from "@nestjs/common";
+import { Injectable } from "@nestjs/common";
 import { PrismaService } from "src/database/PrismaService";
 
-@Controller('comic')
+@Injectable()
 export class findAllComicService{
 
     constructor(private prisma:PrismaService){}
