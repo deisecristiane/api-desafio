@@ -10,6 +10,7 @@ datasource db {
 
 model Comic {
   id Int @id @default(autoincrement())
+  codComic String @unique
   name String
   description String
   price Decimal

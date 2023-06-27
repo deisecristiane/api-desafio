@@ -1,8 +1,8 @@
 import { Body, Controller, Post } from '@nestjs/common';
-import { createComicService } from './createComic.service';
-import { ComicDTO } from './comic.dto';
+import { createComicService } from '../services/createComic.service';
+import { ComicDTO } from '../dtos/comic.dto';
 
-@Controller('comic')
+@Controller('comics')
 export class createComicController {
   constructor(private readonly comicService: createComicService) {}
 

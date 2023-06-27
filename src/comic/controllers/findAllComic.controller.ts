@@ -1,7 +1,7 @@
 import { Controller, Get } from "@nestjs/common";
-import { findAllComicService } from "./findAllComic.service";
+import { findAllComicService } from "../services/findAllComic.service";
 
-@Controller('comic')
+@Controller('comics')
 export class findAllComicController{
     constructor(private readonly comicService: findAllComicService) {}
 

@@ -4,6 +4,7 @@ import { type} from "os";
 
 export type ComicDTO = {
     id?: number;
+    codComic: string;
     name: string;
     description: string;
     price: Decimal;
