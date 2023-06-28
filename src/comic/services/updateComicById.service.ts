@@ -7,6 +7,7 @@ export class updateComicByIdService{
     constructor(private prisma:PrismaService){}
 
     async update(id: number, data:ComicDTO){
+  
       const comicId = parseInt(String(id), 10);
 
       const comicExists = await this.prisma.comic.findUnique({
