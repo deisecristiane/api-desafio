@@ -9,7 +9,7 @@ export class deleteComicController {
   constructor(private readonly comicService: deleteComicByIdService) {}
 
   @Delete(':id')
-  @ApiResponse({ status: 201, description: 'The comic has been successfully created.'})
+  @ApiResponse({ status: 201, description: 'The comics has been successfully deleted'})
   @ApiResponse({ status: 403, description: 'Error'})
   async delete (@Param('id') id: number){
     return this.comicService.delete(id)

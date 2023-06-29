@@ -6,7 +6,12 @@ export class findAllComicService{
 
     constructor(private prisma:PrismaService){}
 
-    async findAll(){
-        return this.prisma.comic.findMany();
+    async findAll(pageNumber, itemNumber){
+        const skip = (pageNumber - 1) * itemNumber;
+        const take = itemNumber;
+        return this.prisma.comic.findMany({
+            skip,
+            take,
+        });
     }
 }
