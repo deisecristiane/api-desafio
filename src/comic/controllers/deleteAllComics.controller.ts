@@ -12,7 +12,7 @@ export class deleteAllComicsController {
   @ApiResponse({ status: 201, description: 'The comics has been successfully deleted.'})
   @ApiResponse({ status: 403, description: 'Error'})
 
-  async delete (){
-    return this.comicService.delete()
+  async delete () : Promise<any>{
+    return this.comicService.deleteAllComics()
   }
 }

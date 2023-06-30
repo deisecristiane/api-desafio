@@ -8,9 +8,11 @@ import { updateComicByIdService } from './services/updateComicById.service';
 import { updateComicController } from './controllers/updateComic.controller';
 import { deleteComicController } from './controllers/deleteComic.controller';
 import { deleteComicByIdService } from './services/deleteComicById.service';
+import { deleteAllComicsService } from './services/deleteAllComics.service';
+import { deleteAllComicsController } from './controllers/deleteAllComics.controller';
 
 @Module({
-  controllers: [createComicController, findAllComicController,updateComicController, deleteComicController],
-  providers: [createComicService, findAllComicService,updateComicByIdService, deleteComicByIdService, PrismaService]
+  controllers: [createComicController, findAllComicController,updateComicController, deleteComicController, deleteAllComicsController],
+  providers: [createComicService, findAllComicService,updateComicByIdService, deleteAllComicsService, deleteComicByIdService, PrismaService]
 })
 export class ComicModule {}
