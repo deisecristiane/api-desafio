@@ -10,9 +10,11 @@ import { deleteComicController } from './controllers/deleteComic.controller';
 import { deleteComicByIdService } from './services/deleteComicById.service';
 import { deleteAllComicsService } from './services/deleteAllComics.service';
 import { deleteAllComicsController } from './controllers/deleteAllComics.controller';
+import { findComicByIdController } from './controllers/findComicById.controller';
+import { findComicByIdService } from './services/findComicById.service';
 
 @Module({
-  controllers: [createComicController, findAllComicController,updateComicController, deleteComicController, deleteAllComicsController],
-  providers: [createComicService, findAllComicService,updateComicByIdService, deleteAllComicsService, deleteComicByIdService, PrismaService]
+	controllers: [createComicController, findAllComicController,findComicByIdController,updateComicController, deleteComicController, deleteAllComicsController],
+	providers: [createComicService, findAllComicService,findComicByIdService,updateComicByIdService, deleteAllComicsService, deleteComicByIdService, PrismaService]
 })
 export class ComicModule {}

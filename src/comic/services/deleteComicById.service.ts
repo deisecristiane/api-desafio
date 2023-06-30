@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { HttpException, HttpStatus, Injectable } from "@nestjs/common";
 import { PrismaService } from "src/database/PrismaService";
 import { ComicDTO } from "../dtos/comic.dto";
@@ -10,7 +11,7 @@ export class deleteComicByIdService{
 
       try {
         const comicId = parseInt(String(id), 10);
-
+ 
         const comicExists = await this.prisma.comic.findUnique({
             where: {
               id: comicId,
