@@ -17,9 +17,7 @@ export class createComicService {
                 }
             });
     
-            if(comicExists){
-                throw new Error('Comic already exists');
-            };
+            if(comicExists){ throw new Error('Comic already exist.');};
 
             const comic = await this.prisma.comic.create({
                 data:{
@@ -32,15 +30,14 @@ export class createComicService {
                     likes: data.likes
                 }
             });
-            return {
-                mensagem:'Comic successfully created!',
-                data: comic
-            };
+            
+            return { sucess: false, mensagem:'Comic successfully created!', comic: comic };
     
         } catch (error) {
             throw new HttpException(
                 {
-                    message:'An error occurred while creating',
+                    sucess: false,
+                    message:'Error creating comic.',
                     detals:error.message
                 },
                 HttpStatus.INTERNAL_SERVER_ERROR,

@@ -11,14 +11,18 @@ export class findAllComicService{
             const skip = (pageNumber - 1) * itemNumber;
             const take = itemNumber;
     
-            return this.prisma.comic.findMany({
+            const comics = await this.prisma.comic.findMany({
                 skip,
                 take,
             });
+
+            return { success: true, message: 'Comics Listed Successfully!', items: itemNumber, comics: comics };
+
         } catch (error) {
             throw new HttpException(
                 {
-                    message:'"Failed to get comics.',
+                    sucess: false,
+                    message:'Comics not listed.',
                     detals:error.message
                 },
                 HttpStatus.INTERNAL_SERVER_ERROR,

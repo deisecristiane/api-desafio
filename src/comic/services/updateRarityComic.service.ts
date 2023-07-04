@@ -11,10 +11,9 @@ export class updateRarityComic{
 		try {
 			const comicId = parseInt(String(id), 10);
 
-      		const comicExists = await this.prisma.comic.findUnique({ where: { id: comicId}});
+      		const comic = await this.prisma.comic.findUnique({ where: { id: comicId}});
 			
-            if (!comicExists) { throw new Error ('Comic does not exist!');};
-            
+            if (!comic) { throw new HttpException('Comic does not exist.', 404);};
 
             const comicUpdate = await this.prisma.comic.update({
                 where:{
@@ -25,11 +24,13 @@ export class updateRarityComic{
                 }
             });
 
-            return comicUpdate
+            return { success: true, message: 'Updated comic rarity!', comic: comicUpdate };
+
 		} catch (error) {
 			throw new HttpException(
                 {
-                    message:'Failed to update comic.',
+                    sucess: false,
+                    message:'Failed to update rarity comic.',
                     detals:error.message
                 },
                 HttpStatus.INTERNAL_SERVER_ERROR,
