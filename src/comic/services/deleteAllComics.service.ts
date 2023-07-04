@@ -16,7 +16,6 @@ export class deleteAllComicsService{
                 {
                     message:'Failed to delete comics.',
                     detals:error.message
-    
                 },
                 HttpStatus.INTERNAL_SERVER_ERROR,
             );

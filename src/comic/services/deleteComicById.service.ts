@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { HttpException, HttpStatus, Injectable } from "@nestjs/common";
 import { PrismaService } from "src/database/PrismaService";
-import { ComicDTO } from "../dtos/comic.dto";
+import { ComicDTO } from "../dtos/Comic.dto";
 
 @Injectable()
 export class deleteComicByIdService{
@@ -19,7 +19,7 @@ export class deleteComicByIdService{
         });
 
         if (!comicExists) {
-            throw new Error('Comic does not exist!');
+            return { success: false, message: "Comic does not exist!" };
         };
     
         await this.prisma.comic.delete({
@@ -27,7 +27,7 @@ export class deleteComicByIdService{
               id: comicId,
             },
         });
-
+        
         return { success: true, message: "Comic deleted successfully." };
 
       } catch (error) {
@@ -35,7 +35,6 @@ export class deleteComicByIdService{
             {
                 message:'"Failed to delete comic.',
                 detals:error.message
-
             },
             HttpStatus.INTERNAL_SERVER_ERROR,
         );

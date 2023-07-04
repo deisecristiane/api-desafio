@@ -1,5 +1,5 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
-import { ComicDTO } from '../dtos/comic.dto';
+import { ComicDTO } from '../dtos/Comic.dto';
 import { PrismaService } from 'src/database/PrismaService';
 
 
@@ -42,7 +42,6 @@ export class createComicService {
                 {
                     message:'An error occurred while creating',
                     detals:error.message
-
                 },
                 HttpStatus.INTERNAL_SERVER_ERROR,
             );

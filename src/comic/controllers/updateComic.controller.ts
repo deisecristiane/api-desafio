@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { Body, Controller,Param, Put } from "@nestjs/common";
-import { ComicDTO } from "../dtos/comic.dto";
+import { ComicDTO } from "../dtos/Comic.dto";
 import { updateComicByIdService } from "../services/updateComicById.service";
 import { ApiResponse, ApiTags } from "@nestjs/swagger";
 

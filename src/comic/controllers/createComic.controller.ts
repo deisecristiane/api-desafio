@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Body, Controller, Post } from '@nestjs/common';
 import { createComicService } from '../services/createComic.service';
-import { ComicDTO } from '../dtos/comic.dto';
+import { ComicDTO } from '../dtos/Comic.dto';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('comics')

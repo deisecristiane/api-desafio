@@ -7,6 +7,10 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+enum Rarity {
+  COMMOM
+  RARE
+}
 
 model Comic {
   id Int @id @default(autoincrement())
@@ -14,7 +18,7 @@ model Comic {
   name String
   description String
   price Decimal
-  rarity Boolean
+  rarity String @default("COMMOM")
   quantity Int
   likes Int
   createdAt DateTime @default(now())
