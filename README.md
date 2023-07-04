@@ -5,26 +5,14 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
+  <p align="center">API REST - Loja de Quadrinhos </p>
+  <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Repositório de API REST de uma loja de quadrinhos.
 
 ## Installation
 
@@ -57,6 +45,26 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+## Endpoints
+
+## 🛠️ Tecnologias utilizadas
+
+* [Typescript](https://www.typescriptlang.org/) - É uma linguagem de programação usada, que adiciona tipos ao tradicional Javascript.
+
+* [Nestjs](https://nestjs.com/) - Escolhido para ser o Framework para desenvolvimento, o nestjs possui uma arquitetura modular, e oferece recursos poderosos, como como injeção de dependência, roteamento, validação de dados, e integração com bibliotecas populares. Sendo assim, ele é altamente escalável, e promove a criação de um código limpo e estruturado.
+
+* [Prisma](https://www.prisma.io/) - Ferramenta de ORM (Object-Relational Mapping) que teve como objetivo a facilitação da interação com o banco de dados. Ele oferece uma camada de abstração para manipulação e consultas de dados.
+
+* [Npm](https://www.npmjs.com/) - Gerenciador de pacotes, muito utilizado ultimammente. E oferece uma vasta opções de pacotes a serem instalados. Facilitando assim a integração de outras bibliotecas ao projeto.
+
+* [Postgresql](https://www.postgresql.org/docs/) - Gerenciador de banco de dados objeto relacional, será usado para aramazenamento de dados. A escolha para o uso desse gerenciador foi a facilidade de instalação e configuração. 
+
+* [Git](https://git-scm.com/doc) - Será utilizado para versionar o projeto durante sua fase de desenvolvimento, para que assim poder ter um rastreamento de versões.
+
+* [GitHub](https://docs.github.com/pt) - Será utilizado para hospedar o projeto durante sua fase de desenvolvimento e como beneficio poder ter um rastreamento de versões.
+
+* [VS code](https://code.visualstudio.com/) - Editor de código para desenvolvimento. Foi escolhido, pois possui uma interface amigável e fácil utilização.
+
 
 ## Support
 

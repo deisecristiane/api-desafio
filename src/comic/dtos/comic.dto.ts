@@ -1,7 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { Prisma } from "@prisma/client";
-import { Decimal } from "@prisma/client/runtime";
-import { type } from "os";
+import { RarityEnum } from "../enums/rarity.enum";
 
 export class ComicDTO {
     
@@ -39,7 +37,7 @@ export class ComicDTO {
         description:'A raridade será usada para definir se o quadrinho é raro ou não.',
         example:true
     })
-    rarity: boolean;
+    rarity: RarityEnum;
 
     @ApiProperty({
         description:'A quantidade será usada para definir a quantidade de quadrinhos.',
