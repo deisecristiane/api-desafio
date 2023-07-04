@@ -13,16 +13,17 @@ export class findComicByIdService {
         try {
             const comicId = parseInt(String(id), 10);
 
-            const comicExists = await this.prisma.comic.findUnique({ where: { id: comicId }});
+            const comic = await this.prisma.comic.findUnique({ where: { id: comicId }});
 
-        	if (!comicExists) { throw new Error('Comic does not exist!');};
+        	if (!comic) { throw new HttpException('Comic does not exist.', 404);};
         
-        	return this.prisma.comic.findUnique({ where: { id: comicId }});
+        	return { success: true, message: 'Comic Listed Successfully!', comic: comic };
 			
         } catch (error) {
             throw new HttpException(
                 {
-                    message:'Failed to delete comic.',
+                    sucess: false,
+                    message:'Comic not listed.',
                     detals:error.message
                 },
                 HttpStatus.INTERNAL_SERVER_ERROR,
