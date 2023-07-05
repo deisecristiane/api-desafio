@@ -8,6 +8,10 @@ export class updateComicByIdService{
     constructor(private prisma:PrismaService){}
 
     async update(id: number, data:ComicDTO){
+		const date = new Date();
+		const updatedAt = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+
+
 		try {
 			const comicId = parseInt(String(id), 10);
 
@@ -23,7 +27,8 @@ export class updateComicByIdService{
 				price: data.price,
 				rarity: data.rarity,
 				quantity: data.quantity,
-				likes: data.likes
+				likes: data.likes,
+				updatedAt
 				},
         		where: {id: comicId},
       		});

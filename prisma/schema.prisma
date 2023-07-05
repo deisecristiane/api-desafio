@@ -21,8 +21,8 @@ model Comic {
   rarity String @default("COMMOM")
   quantity Int
   likes Int
-  createdAt DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+  createdAt DateTime
+  updatedAt DateTime @updatedAt
 
   @@map("comics")
 }

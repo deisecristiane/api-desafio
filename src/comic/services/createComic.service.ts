@@ -10,6 +10,10 @@ export class createComicService {
     constructor(private prisma:PrismaService){}
 
     async create(data: ComicDTO){
+        const date = new Date();
+        const createdAt  = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+        const updatedAt  = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+        
         try {
             const comicExists = await this.prisma.comic.findFirst({
                 where:{
@@ -27,11 +31,13 @@ export class createComicService {
                     price: data.price,
                     rarity: data.rarity,
                     quantity: data.quantity,
-                    likes: data.likes
+                    likes: data.likes,
+                    updatedAt,
+                    createdAt,
                 }
             });
-            
-            return { sucess: false, mensagem:'Comic successfully created!', comic: comic };
+
+            return { sucess: true, mensagem:'Comic successfully created!', comic: comic };
     
         } catch (error) {
             throw new HttpException(
