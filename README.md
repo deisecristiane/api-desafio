@@ -1,13 +1,13 @@
 <p align="center">
-  <a target="blank"><img src="https://user-images.githubusercontent.com/81196756/251611823-aa18e6ae-837c-49e1-98de-c56cb3d7fb4b.jpg" width="200" alt="Nest Logo" /></a>
+  <a target="blank"><img src="https://user-images.githubusercontent.com/81196756/251611823-aa18e6ae-837c-49e1-98de-c56cb3d7fb4b.jpg" width="200" /></a>
 </p>
 
 <h1 align="center">API REST - Loja de Quadrinhos</h1>
 
 ## 📝 Descrição
 
-<h2> Repositório de API REST de uma loja de quadrinhos.
-</h2>
+<h3> Repositório de API REST de uma loja de quadrinhos.
+</h3>
 
 ## 🚀 Instalação de dependências
 
