@@ -27,9 +27,13 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+## Rodando a documentação da API
 
+```bash
 
+$ http://localhost:3000/api/
 
+```
 ## 📚 Atributos dos Quadrinhos
 * Código do quadrinho - Para referenciar quadrinho. Ex: comic1
 * Name - Identificação do quadrinho. Ex: Homem Aranha
