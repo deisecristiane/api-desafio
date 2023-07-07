@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { HttpException, HttpStatus, Injectable } from "@nestjs/common";
 import { PrismaService } from "src/database/PrismaService";
-import { ComicDTO } from "../dtos/Comic.dto";
+
 
 @Injectable()
 export class deleteComicByIdService{

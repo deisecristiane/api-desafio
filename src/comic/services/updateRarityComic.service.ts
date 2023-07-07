@@ -1,6 +1,5 @@
 import { HttpException, HttpStatus, Injectable } from "@nestjs/common";
 import { PrismaService } from "src/database/PrismaService";
-import { RarityEnum } from "../enums/rarity.enum";
 import { ComicDTO } from "../dtos/Comic.dto";
 
 @Injectable()
