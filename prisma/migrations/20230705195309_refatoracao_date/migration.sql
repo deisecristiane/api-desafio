@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "comics" ALTER COLUMN "updatedAt" SET DATA TYPE TEXT,
+ALTER COLUMN "createdAt" SET DATA TYPE TEXT;

@@ -61,6 +61,7 @@ export class ComicDTO {
         description:'O updateAt define quando o quadrinho foi atualizado.',
         example:'15/06/23'
     })
-    updatedAt?: Date;
+    updatedAt?: string;
+    
 
 }

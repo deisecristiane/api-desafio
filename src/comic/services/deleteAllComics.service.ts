@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { HttpException, HttpStatus, Injectable, NotFoundException } from "@nestjs/common";
 import { PrismaService } from "src/database/PrismaService";
-import { Comic } from "../entities/comic.entity";
+
 
 
 @Injectable()
