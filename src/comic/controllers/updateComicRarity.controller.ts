@@ -3,7 +3,7 @@ import { Body, Controller,Param, Put, Patch } from "@nestjs/common";
 import { ComicDTO } from "../dtos/Comic.dto";
 import { updateComicByIdService } from "../services/updateComicById.service";
 import { ApiResponse, ApiTags } from "@nestjs/swagger";
-import { ComicRarityDTO } from "../dtos/ComicRarity.dto";
+
 
 @ApiTags('comics')
 @Controller('comics')

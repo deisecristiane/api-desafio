@@ -1,3 +1,0 @@
--- AlterTable
-ALTER TABLE "comics" ALTER COLUMN "rarity" SET DEFAULT 'COMMOM',
-ALTER COLUMN "rarity" SET DATA TYPE TEXT;
