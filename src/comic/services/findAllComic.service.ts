@@ -16,7 +16,7 @@ export class findAllComicService{
                 take,
             });
 
-            return { success: true, message: 'Comics Listed Successfully!', items: itemNumber, comics: comics };
+            return { success: true, message: 'Comics Listed Successfully!', comics: comics };
 
         } catch (error) {
             throw new HttpException(

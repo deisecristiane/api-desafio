@@ -1,5 +1,5 @@
 <p align="center">
-  <a target="blank"><img src="https://private-user-images.githubusercontent.com/81196756/251601171-c1436405-465b-46cd-bc0a-04a9cbbb0910.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg4Njg4MTA2LCJuYmYiOjE2ODg2ODc4MDYsInBhdGgiOiIvODExOTY3NTYvMjUxNjAxMTcxLWMxNDM2NDA1LTQ2NWItNDZjZC1iYzBhLTA0YTljYmJiMDkxMC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNzA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDcwNlQyMzU2NDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMmNhN2VkOGM0NjJlMTA5Zjg0MDRjMWYxYzQ4ZDhkMmIzNmMwNzM0ZjNkN2ExNjBjMzk3YWQ2MjM4ZTQwNjQ2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.QeW5pzA7F5Sb36GnZmWVfVhfuVn-4jbogVDn3olIJhY" width="200" alt="Nest Logo" /></a>
+  <a target="blank"><img src="https://user-images.githubusercontent.com/81196756/251611823-aa18e6ae-837c-49e1-98de-c56cb3d7fb4b.jpg" width="200" alt="Nest Logo" /></a>
 </p>
 
 <h1 align="center">API REST - Loja de Quadrinhos</h1>

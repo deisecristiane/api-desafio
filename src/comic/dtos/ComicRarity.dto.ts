@@ -1,4 +1,5 @@
-import { RarityEnum } from "../enums/rarity.enum";
+import { RarityEnum } from "../enums/RarityEnum";
+
 
 export class ComicRarityDTO {
     rarity: RarityEnum;
