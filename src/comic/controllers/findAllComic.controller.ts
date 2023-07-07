@@ -9,8 +9,9 @@ export class findAllComicController {
     constructor(private readonly comicService: findAllComicService) { }
 
     @Get()
-    @ApiResponse({ status: 201, description: 'The comics has been successfully findAll.' })
-    @ApiResponse({ status: 403, description: 'Error' })
+    @ApiResponse({ status: 200, description: 'Comics Listed Successfully!' })
+    @ApiResponse({ status: 404, description: 'Comics not listed.' })
+    @ApiResponse({ status: 500, description: 'Internal server error.' })
     
     async findAll(@Query('pageNumber') pageNumber = 1, @Query('itemNUmber') itemNumber = 10) {
 		return this.comicService.findAll(pageNumber, itemNumber);

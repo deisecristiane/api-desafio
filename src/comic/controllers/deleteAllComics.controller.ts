@@ -10,8 +10,8 @@ export class deleteAllComicsController {
 	constructor(private readonly comicService: deleteAllComicsService) { }
 
 	@Delete()
-	@ApiResponse({ status: 201, description: 'The comics has been successfully deleted.' })
-	@ApiResponse({ status: 403, description: 'Error' })
+	@ApiResponse({ status: 200, description: 'All comics deleted successfully!' })
+	@ApiResponse({ status: 500, description: 'Failed to delete comics.' })
 
 	async delete(): Promise<any> {
     	return this.comicService.deleteAllComics()

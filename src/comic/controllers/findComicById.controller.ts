@@ -9,8 +9,9 @@ export class findComicByIdController {
     constructor(private readonly comicService: findComicByIdService) {}
 
     @Get(':id')
-    @ApiResponse({ status: 200, description: 'The comics has been successfully deleted.'})
-    @ApiResponse({ status: 403, description: 'Error'})
+    @ApiResponse({ status: 200, description: 'Comic Listed Successfully!'})
+    @ApiResponse({ status: 404, description: 'Comic does not exist.'})
+    @ApiResponse({ status: 500, description: 'Internal server error.'})
 
     async delete (@Param('id') id: number) {
         return this.comicService.findComicById(id)

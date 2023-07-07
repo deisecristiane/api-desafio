@@ -1,5 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { RarityEnum } from "../enums/rarity.enum";
+import { RarityEnum } from "../enums/RarityEnum";
+
 
 export class ComicDTO {
     
