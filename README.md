@@ -18,18 +18,14 @@ $ npm install
 ## 🚀 Rodando a API
 
 ```bash
-# development
+
 $ npm run start
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 ## Rodando a documentação da API
 
 ```bash
+## No seu navegador acesse a seguinte URL:
 
 $ http://localhost:3000/api/
 
